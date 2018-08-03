@@ -24,16 +24,19 @@ When Publisher sends a message to a topic, the Subscriber subscribing to the top
 ## Run mosquitto subscriber, publisher
 * Open two Command Prompt programs.
 
-* >cd /
-
-	>cd "Program Files (x86)\mosquitto" 
+*     
+		cd /
+	
+		cd "Program Files (x86)\mosquitto" 
 
 * First cmd
-    mosquitto_sub -h "host" -t "topic name" -p "port number"
-    ex) mosquitto_sub -h 192.168.0.15 -t /home/set -p 1883
+	> mosquitto_sub -h "host" -t "topic name" -p "port number"
 
-* Second cmd    
-    mosquitto_pub -h "host" -t "topic name" -m "message" -V mqttv311
-    ex) mosquitto_pub -h 192.168.0.15 -t /home/set -m "ON" -V mqttv311
+	ex) mosquitto_sub -h 192.168.0.15 -t /home/set -p 1883
+    
+* Second cmd
+	> mosquitto_pub -h "host" -t "topic name" -m "message" -V mqttv311
+
+	ex) mosquitto_pub -h 192.168.0.15 -t /home/set -m "ON" -V mqttv311
  
 * Check communication.
