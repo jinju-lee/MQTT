@@ -3,7 +3,8 @@ When Publisher sends a message to a topic,
 
 the Subscriber subscribing to the topic receives the message through the MQTT Broker.
 
-## Installing mosquitto on Windows
+## 1. mosquitto 
+### Installing mosquitto on Windows
 
 1. Download the windows installation file.
 
@@ -22,8 +23,8 @@ the Subscriber subscribing to the topic receives the message through the MQTT Br
 
 4. Copy the **pthreadVC2.dll** file that was downloaded earlier on **" C:\Program Files (x86)\mosquitto "**.
 
-
-## Run mosquitto subscriber, publisher
+------------------
+### Run mosquitto subscriber, publisher
 * Open two Command Prompt programs.
 
 *     
@@ -42,3 +43,20 @@ the Subscriber subscribing to the topic receives the message through the MQTT Br
 	ex) mosquitto_pub -h 192.168.0.15 -t /home/set -m "ON" -V mqttv311
  
 * Check communication.
+
+# 2. python
+### Installing python module
+	sudo apt-get install python-pip
+	sudo pip3 install paho-mqtt
+	
+---------------
+### Run
+* Open two terminals.
+* First terminal
+
+	> python3 sub.py
+* Second terminal
+
+	> python3 pub.py
+* Check communication
+
