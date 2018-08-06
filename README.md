@@ -1,5 +1,7 @@
 # Mosquitto MQTT Server 
-When Publisher sends a message to a topic, the Subscriber subscribing to the topic receives the message through the MQTT Broker.
+When Publisher sends a message to a topic, 
+
+the Subscriber subscribing to the topic receives the message through the MQTT Broker.
 
 ## Installing mosquitto on Windows
 
